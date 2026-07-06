@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  
+  <p id="description">Please fill out this survey form.</p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" id="number" placeholder="Enter your phone number" min="0" max="10000000000000000" required>
+    
+    <label for="dropdown">Rate Our Service On A Scale From 1 Through 10:</label>
+    <select id="dropdown">
+      <option value="option1">1 (Terrible)</option>
+      <option value="option2">2-3 (Bad)</option>
+      <option value="option3">4-5 (Ok)</option>
+      <option value="option4">6-7 (Good)</option>
+      <option value="option5">8-9 (Great)</option>
+      <option value="option6">10 (Excellent)</option>
+    </select>
+    
+    <label>Where Did You Hear About Us?</label>
+    <input type="radio" name="option" value="option1"> Social Media
+    <input type="radio" name="option" value="option2"> TV
+    <input type="radio" name="option" value="option3"> Billboards
+    <input type="radio" name="option" value="option4"> Other
+  
+    <label>What Do You Use Our Forum For?</label>
+    <input type="checkbox" name="checkbox" value="option1"> Business
+    <input type="checkbox" name="checkbox" value="option2"> Education
+    <input type="checkbox" name="checkbox" value="option"> Personal
+    
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments"></textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
